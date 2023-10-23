@@ -96,7 +96,7 @@
         const qrCodeSuccessCallback = (decodedText, decodedResult) => {
             /* handle success */
         };
-        const config = { fps: 10, qrbox: { width: 250, height: 250 } };
+        const config = { fps: 10, qrbox: { width: 250, height: 250 }, defaultZoomValueIfSupported: 2 };
 
         // If you want to prefer back camera
         html5QrCode.start({ facingMode: "environment" }, config, onScanSuccess);
